@@ -30,9 +30,9 @@ and provide user authentication functionality through login and registration.
 
 ---
 ### Screenshots
-![1.png](https://www.dropbox.com/scl/fi/bzu1lu2eiyzpsm89km7fj/1.png?rlkey=1b39qh0ak6fqo063a2oscqu6q&dl=0)
-![2.png]([..%2F..%2FUsers%2FOlek%20Banasiak%2FDesktop%2Fzdjecia%20do%20to%20do%20listy%2F2.png](https://www.dropbox.com/scl/fi/7ehzz9x1z5hkwgcie5snv/2.png?rlkey=dcb6oopf13q2lzu7rila41rww&dl=0))
-![3.png]([..%2F..%2FUsers%2FOlek%20Banasiak%2FDesktop%2Fzdjecia%20do%20to%20do%20listy%2F3.png](https://www.dropbox.com/scl/fi/msz32hbntilm0hm3o4ohv/3.png?rlkey=zg9vy591dqkzinro8cebx8fhw&dl=0))
-![4.png]([..%2F..%2FUsers%2FOlek%20Banasiak%2FDesktop%2Fzdjecia%20do%20to%20do%20listy%2F4.png](https://www.dropbox.com/scl/fi/7pvdo94fso2ail17d3kf2/4.png?rlkey=9vby3zv1o6d89alvpwpx6m2x8&dl=0))
-![5.png]([..%2F..%2FUsers%2FOlek%20Banasiak%2FDesktop%2Fzdjecia%20do%20to%20do%20listy%2F5.png](https://www.dropbox.com/scl/fi/b5daveowhlzpyziblvzcc/5.png?rlkey=ads6uhc76slw7qmy4g6gw1kim&dl=0))
-![6.png]([..%2F..%2FUsers%2FOlek%20Banasiak%2FDesktop%2Fzdjecia%20do%20to%20do%20listy%2F6.png](https://www.dropbox.com/scl/fi/mqaqualpopf4cpvbzz1uz/6.png?rlkey=msgmcqd20rpfyr4qcsjedv7vk&dl=0)https://www.dropbox.com/scl/fi/mqaqualpopf4cpvbzz1uz/6.png?rlkey=msgmcqd20rpfyr4qcsjedv7vk&dl=0)
+![1](https://github.com/AleksanderBanasiak/ToDoList/assets/147528750/f9882c2f-8785-42f7-8f02-1898b971b08d)
+![2](https://github.com/AleksanderBanasiak/ToDoList/assets/147528750/954910d8-6560-4d37-8f60-debd516be5ae)
+![3](https://github.com/AleksanderBanasiak/ToDoList/assets/147528750/249e057a-71b6-44c9-be0a-2c341e3136cb)
+![4](https://github.com/AleksanderBanasiak/ToDoList/assets/147528750/e5045cf8-c56a-438b-8941-d8c6526e9326)
+![5](https://github.com/AleksanderBanasiak/ToDoList/assets/147528750/00899b37-e35e-4703-af8e-8f8591d966a8)
+![6](https://github.com/AleksanderBanasiak/ToDoList/assets/147528750/5a68d6ac-6759-464b-8d73-ba5c84cbeba3)
