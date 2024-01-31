@@ -9,7 +9,7 @@
 designed to facilitate the creation of task lists, allowing users
 to add tasks with distinct names, detailed descriptions, and specified deadlines.
 The functionality of the application encompasses editing and removing both lists and tasks,
-and provide user authentication functionality through login and registration.
+and provides user authentication functionality through login and registration.
 
 
 <br>
