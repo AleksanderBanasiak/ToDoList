@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+li, a, button, h2{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #24252A;
+}
+.logo{
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 0.6s ease 0s;
+}
+.logo:hover{
+    cursor: pointer;
+    font-size: 20px;
+    color: #8A2BE2;
+}
+.navBar{
+    list-style: none;
+}
+.navBar li{
+    display: inline-block;
+    padding: 0 20px;
+}
+.navBar li a{
+    transition: all 0.3s ease 0s;
+}
+.navBar li a:hover{
+    color: #8A2BE2;
+}
+.contact{
+    padding: 9px 25px;
+    background-color: rgba(184,3,255,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.7s ease 0s;
+}
+.contact:hover{
+    background-color: rgba(184,3,255,0.8);
+    color: #28292e;
+}
+.footer {
+    background-color: #24252A;
+    color: #edf0f1;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 560;
+    font-size: 13px;
+    padding: 13px;
+  }
+.lastMargin{
+    padding-top: 50px;
+}
+.footer:hover{
+    color: #8A2BE2;
+    cursor: pointer;
+}
+.container{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+body{
+    background-color: #525561;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+table{
+    width: 100%;
+    border-radius: 30px;
+    background-color: #24252A;
+    color: #edf0f1;
+    margin-bottom: 20px;
+}
+th:first-child {
+    border-radius: 30px 0 0 0;
+}
+th:last-child {
+    border-radius: 0 30px 0 0;
+}
+td:first-child {
+    border-radius: 0 0 0 30px;
+}
+td:last-child {
+    border-radius: 0 0 30px 0;
+}
+table, th, td {
+    border-collapse: collapse;
+    padding: 18px;
+    text-align: center;   
+}
+thead{ 
+    border-radius: 30px;
+    border-collapse: collapse;
+}
+thead tr {
+    background-color: #8A2BE2;
+    cursor: pointer;
+    text-transform: capitalize;   
+}
+tr:nth-child(even){
+    background-color: #303135;
+}
+.nazwaListy{
+    display: flex;
+    margin-left: 30px;
+    padding: 5px;   
+}
+.nazwaListy h2{
+    color: #8A2BE2;
+    margin-right: 20px;
+    font-size: 40px;
+    font-weight: 700;
+}
+.nazwaListy a{
+    background-color: #24252A;
+    font-size: 30px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 5px; 
+}
+.nazwaListy a:hover{
+    background-color: rgba(184,3,255,0.8);
+    color: #24252A;
+}
+.nazwaListy .update{
+    border: blue  1px solid;
+    background-color: #1a53ff;
+    color: #24252A;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.nazwaListy .delete{
+    border: red  1px solid;
+    background-color: #e60000;
+    color: #24252A;
+    border-radius: 20px;
+    padding: 6px 10px;
+    cursor: pointer;
+}
+.nazwaListy .update:hover{
+    background-color: #4872f1;
+    color: #edf0f1;
+}
+.nazwaListy .delete:hover{
+    background-color: #dc4848;
+    color: #edf0f1;
+}
+.update{
+    border: blue  1px solid;
+    background-color: #1a53ff;
+    color: #24252A;
+    border-radius: 20px;
+    padding: 9px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.delete{
+    border: red  1px solid;
+    background-color: #e60000;
+    color: #24252A;
+    border-radius: 20px;
+    padding: 9px 15px;
+    cursor: pointer;
+}
+.update:hover{
+    background-color: #4872f1;
+    color: #edf0f1;
+}
+.delete:hover{
+    background-color: #dc4848;
+    color: #edf0f1;
+}
+.backToMain{
+    justify-content: center;
+    display: flex;
+}
+.backToMain a {
+    background-color: #24252A;
+    font-size: 30px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    padding: 7px 15px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+.backToMain a:hover{
+    background-color: rgba(184,3,255,0.8);
+    color: #24252A;
+}
+.input-group{
+    position: relative;
+    margin: 30px 0;
+}
+.input-group label{
+    position: absolute;
+    top: 50%;
+    left: 225px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #8A2BE2;
+    padding: 0 5px;
+    pointer-events: none;
+    transition: .5s;
+}
+.input-group input{
+    width: 340px;
+    height: 50px;
+    font-size: 18px;
+    color: #8A2BE2;
+    padding: 0 10px;
+    background: transparent;
+    border: 3px solid #8A2BE2;
+    outline: none;
+    border-radius: 10px;
+}
+.input-group input:focus~label,
+.input-group input:valid~label{
+    top: 0;
+    font-size: 14px;
+    background-color: #24252A;
+}
+.datepicker-input::-webkit-calendar-picker-indicator{
+    cursor: pointer;
+    background-color: #8A2BE2;
+}
+.input-group input[type=color]{
+    height: 200px;
+}
+.colorStyle {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 340px;   
+    height: 150px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    margin-top: 3px;
+  }
+.colorStyle::-webkit-color-swatch {
+    border-radius: 10px;
+}
+.buttonSub{
+    color: #24252A;
+    margin: 30px;
+    font-size: 30px;
+    border-radius: 13px;
+    padding: 7px 10px;
+    background-color: #8A2BE2;
+    cursor: pointer;
+}
+.buttonSub:hover{
+    color: #edf0f1;
+    background-color: rgba(184,3,255,1.2);
+}
+.containerToCreate{
+    width: 50%;
+    margin: 50px auto auto;
+}
+.contentToCreate{
+    border-radius: 40px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    background-color: #24252A;
+    color: #edf0f1;
+}
+.containerToCreate h1{
+    font-size: 45px;
+    margin: 30px;
+    padding: 20px;
+}
+

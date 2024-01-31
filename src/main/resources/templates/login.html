@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/css/style2.css">
+    <title>Login Page</title>
+</head>
+
+<body>
+<h1 class="todo">
+    <p>To</p>
+    <p class="obj1">Do</p>
+    <p class="obj2">List</p>
+       </h1>
+<div class="container" id="container">
+    <div class="form-container sign-up">
+        <form th:action="@{/register}" method="post" th:object="${user}">
+            <div class="showMessage"></div>
+            <h1 class="signIn">Create Account</h1>
+            <div class ="input-group">
+                <input type="text" id="firstName" th:field="*{name}" autocomplete="off" required>
+                <label>Name</label>
+            </div>
+            <div class ="input-group">
+                <input type="email" id="email" th:field="*{email}" autocomplete="off" required>
+                <label>Email</label>
+            </div>
+            <div class ="input-group">
+                <input type="password" th:field="*{password}" autocomplete="off" required>
+                <label>Password</label>
+            </div>
+            <button name="register">Sign Up</button>
+        </form>
+    </div>
+    <div class="form-container sign-in">
+        <form th:action="@{/login}" method="post">
+            <div class="showMessage">
+                <div class="message"  th:if="${param.error}" >Invalid Data</div>
+                <div class="message"  th:if="${param.logout}" >Logout Successful!</div>
+            </div>
+            <h1 class="signIn">Sign In</h1>
+            <div class ="input-group">
+            <input type="text" minlength="3" maxlength="15" id ="username" name = "username" autocomplete="off" required>
+                <label>Name</label>
+            </div>
+            <div class ="input-group">
+            <input type="password" minlength="3" maxlength="15" id="password" name="password" autocomplete="off" required>
+                <label>Password</label>
+            </div>
+            <button>Sign In</button>
+        </form>
+    </div>
+    <div class="toggle-container">
+        <div class="toggle">
+            <div class="toggle-panel toggle-left">
+                <h1>Welcome Back!</h1>
+                <p>Enter your personal details and start being more productive than ever</p>
+                <button class="hidden" id="login">Sign In</button>
+            </div>
+            <div class="toggle-panel toggle-right">
+                <h1>First time?</h1>
+                <p>Register with your personal details and never forget your tasks</p>
+                <button onclick="delay('/register')" type="submit" class="hidden" id="register">Sign Up</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/js/script.js"></script>
+</body>
+
+</html>

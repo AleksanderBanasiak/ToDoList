@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+    <header th:fragment="TaskHeader">
+        <a th:href="@{/tasks}" class="logo">To Do List</a>
+        <nav>
+            <ul class="navBar">
+                <li><a th:href = "@{/list/new}">Add List</a></li>
+                <li><a th:href="@{/list/manage}">Manage Lists</a></li>
+            </ul>
+        </nav>
+        <a class="cta" th:href="@{/logout}" ><button th:text="${userdetail.getUsername()}" class="contact"></button></a>
+    </header>
+</body>
+</html>

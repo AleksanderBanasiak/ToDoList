@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="ISO-8859-1">
+  <title>Create List</title>
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+<header th:replace="fragments/header.html :: TaskHeader"></header>
+<div class = "containerToCreate">
+    <div class="contentToCreate">
+      <h1> Create New List </h1>
+        <form th:action="@{/list}" th:object = "${list}" method="POST">
+            <div class ="input-group">
+                <input type="text" maxlength="30" minlength="1" autocomplete="off" name = "name" th:field = "*{name}" required>
+                <label>List Name</label>
+                  </div>
+          <div class ="input-group">
+          <input type="color" name="color" th:field="*{color}" class="colorStyle" required>
+          <label> Color</label>
+            </div>
+          <button type="submit" class = "buttonSub">Create</button>
+        </form>
+    </div>
+</div>
+<div th:replace="fragments/footer.html :: TaskFooter"></div>
+</body>
+</html>

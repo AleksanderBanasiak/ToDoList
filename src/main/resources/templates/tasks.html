@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+<header th:replace="fragments/header.html :: TaskHeader"></header>
+<br>
+
+<div class ="container">
+    <table class = "item" th:each="todolist: ${todolists}" >
+        <div class="nazwaListy" >
+            <h2 th:text="${todolist.name}" th:style="|color: ${todolist.color}|"></h2>
+            <a th:href = "@{/tasks/new/{id}(id=${todolist.toDoId})}" >+</a>
+        </div>
+
+        <thead class = "tableDescription">
+        <tr th:style="|background-color: ${todolist.color}|">
+            <th>Name</th>
+            <th>Description</th>
+            <th>Date</th>
+            <th> Actions</th>
+        </tr>
+        </thead>
+        <tbody class="tableBody">
+        <tr th:each = "task: ${todolist.tasks}">
+            <td th:text = "${task.name}"> </td>
+            <td th:text = "${task.description}"> </td>
+            <td th:text = "${task.date}"></td>
+            <td>
+                <a th:href = "@{/tasks/edit/{id}(id=${task.id})}"
+                   class = "update">Update</a>
+                <a th:href = "@{/tasks/{id}(id=${task.id})}"
+                   class = "delete">Delete</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="lastMargin"></div>
+<div th:replace="fragments/footer.html :: TaskFooter"></div>
+</body>
+</html>

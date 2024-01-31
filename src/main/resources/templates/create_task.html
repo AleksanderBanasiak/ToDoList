@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="ISO-8859-1">
+  <title>Create List</title>
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+<header th:replace="fragments/header.html :: TaskHeader"></header>
+<div class = "containerToCreate">
+    <div class="contentToCreate">
+      <h1> Create New Task </h1>
+        <form th:action="@{/save/{id} (id=${list.toDoId})}" th:object = "${task}"  method="POST">
+            <div class ="input-group">           
+                <input type = "text" maxlength="30" minlength="1" name = "name" th:field = "*{name}" autocomplete="off" required>
+                <label>Task Name</label>
+              </div>
+            <div class ="input-group">
+                <input type = "text" maxlength="30" minlength="1" name = "description" th:field = "*{description}" autocomplete="off" required>
+                <label> Description </label>
+              </div>
+            <div class ="input-group">
+            <input class="datepicker-input" type = "date" name = "date" th:field = "*{date}" value="2019-07-04" >
+            <label> Date </label>
+          </div>
+            <button type="submit" class = "buttonSub">Create</button>
+        </form>
+    </div>
+</div>
+<div th:replace="fragments/footer.html :: TaskFooter"></div>
+</body>
+</html>
